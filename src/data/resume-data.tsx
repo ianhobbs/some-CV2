@@ -18,17 +18,17 @@ export const RESUME_DATA: ResumeData = {
       {
         name: "GitHub",
         url: "https://github.com/ianhobbs",
-        icon: GitHubIcon,
+        icon: "github"
       },
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/ianhobbs/",
-        icon: LinkedInIcon,
+        icon: "linkedin",
       },
       {
-        name: "Instagram",
+        name: "Instagram", 
         url: "https://www.instagram.com/ianhobbs_media/",
-        icon: Insta,
+        icon: "globe",
       },
     ],
   },
@@ -52,29 +52,26 @@ export const RESUME_DATA: ResumeData = {
       link: "https://ianhobbsmedia.com.au",
       badges: ["current"],
       title: "Media",
-      logo: MobileVikingsLogo,
       start: "2000",
       end: "now",
       description:
-        "Experience includes; Videographer, Editor, Photographer, Front-end development, Animator, Design, Web production, Server and Data Management. Client and Project Management. Art Direction, Concept development. Media strategy and Editorial strategy.",
+        <>Experience includes; Videographer, Editor, Photographer, Front-end development, Animator, Design, Web production, Server and Data Management. Client and Project Management. Art Direction, Concept development. Media strategy and Editorial strategy.</>,
     },
     {
       company: "Museum and Art Gallery of Nothern Territory",
       link: "https://magnt.net.au",
       badges: ["Fulltime"],
       title: "Digitisation Officer",
-      logo: ParabolLogo,
       start: "04/2024",
       end: "10/2024",
       description:
-        "Digitising Collections and managing data assets. Docuementation of collection works with Fuji GFX100 and PhaseOne cameras. Digitising to FADGI-4 standards using a varueity of ICC managamant profiles. File archive and managment with Neofinder and Bash scripting. Capture-One-Pro Photoshop and other image management applications.",
+        <>Digitising Collections and managing data assets. Docuementation of collection works with Fuji GFX100 and PhaseOne cameras. Digitising to FADGI-4 standards using a varueity of ICC managamant profiles. File archive and managment with Neofinder and Bash scripting. Capture-One-Pro Photoshop and other image management applications.</>,
     },
     {
       company: "Codey",
       link: "https://codey.com.au",
       badges: ["current"],
       title: "Web",
-      logo: ClevertechLogo,
       start: "2011",
       end: "now",
       description:
@@ -85,7 +82,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.sydney.edu.au/arts/schools/sydney-college-of-the-arts.html",
       badges: ["Contract"],
       title: "Research Officer",
-      logo: JojoMobileLogo,
       start: "10/2018",
       end: "12/2018",
       description:
@@ -96,7 +92,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.sydney.edu.au/arts/schools/sydney-college-of-the-arts.html",
       badges: ["Sessional"],
       title: "Lecturer",
-      logo: NSNLogo,
       start: "2010",
       end: "2014",
       description: "Design and deliver subjects in Photography and Electronic & New Media.",
@@ -106,7 +101,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://utscollege.edu.au",
       badges: ["Sessional"],
       title: "Lecturer",
-      logo: NSNLogo,
       start: "2010",
       end: "2014",
       description: "Deliver subjects in Digital Literacy",
@@ -116,7 +110,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://sae.edu.au/",
       badges: ["Sessional"],
       title: "Lecturer",
-      logo: NSNLogo,
       start: "2007",
       end: "2010",
       description: "Deliver courses in Web, Design, Video and Animation. Audio",
@@ -126,7 +119,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.newcastle.edu.au",
       badges: ["Sessional"],
       title: "Lecturer",
-      logo: NSNLogo,
       start: "2001",
       end: "2006",
       description: "Design and deliver courses in Digital Imaging, Video",
@@ -136,7 +128,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.westernsydney.edu.au",
       badges: ["Sessional"],
       title: "Lecturer",
-      logo: NSNLogo,
       start: "2001",
       end: "2006",
       description: "Design and New Media, Web and Time based media.",
@@ -146,7 +137,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.tafensw.edu.au/design-centre-enmore",
       badges: ["Sessional"],
       title: "Teacher",
-      logo: NSNLogo,
       start: "2001",
       end: "2006",
       description: "Design and deliver courses in New media, Flash, Web Photo-media, Design. Animation",
@@ -156,7 +146,6 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.doubleday.com.au/",
       badges: ["Fulltime"],
       title: "Photographer",
-      logo: NSNLogo,
       start: "1996",
       end: "1997",
       description: "Producing studio product photography for direct marketing. Maintaining accounts and equipment",
@@ -166,7 +155,6 @@ export const RESUME_DATA: ResumeData = {
       link: " ",
       badges: ["Fulltime"],
       title: "Camera Operator",
-      logo: NSNLogo,
       start: "1990",
       end: "1992",
       description: "Operate and manage small photographic studio servicing internal graphic needs; maintain budget; operate a Rostrum camera to create film dupes and matts; location, corporate, architectural, product and interior photography.",
@@ -176,7 +164,6 @@ export const RESUME_DATA: ResumeData = {
       link: " ",
       badges: ["Fulltime"],
       title: "Photographer",
-      logo: NSNLogo,
       start: "1989",
       end: "1992",
       description: "Operate and manage small photographic studio servicing internal graphic needs; maintain budget; product photography for retail catalogues.",
@@ -271,7 +258,6 @@ export const RESUME_DATA: ResumeData = {
         "Full Stack Developer",
       ],
       description: "Created a business website with seductive animations and strong case study representations",
-      logo: ConsultlyLogo,
       link: {
         label: "clearcontrol.com.au",
         href: "https://www.clearcontrol.com.au/",
@@ -282,7 +268,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["PerchCMS", "Web Production","Content","Photography"],
       description:
         "A festival site showcasing artists and Festival events",
-      logo: MonitoLogo,
       link: {
         label: "cementa.com.au",
         href: "https://cementa.com.au/",
@@ -293,7 +278,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Web Production","Animation"],
       description:
         "A website of the Museum of Sydney 'A Thousand Words' exhibition",
-      logo: JarockiMeLogo,
       link: {
         label: "atwonline.com.au",
         href: "https://atwonline.com.au",
@@ -304,7 +288,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["After Effects","Video"],
       description:
         "Develop animations for custom Architectural LED screens for Robyn Backen",
-      logo: Minimal,
       link: {
         label: "ianhobbsmedia.com.au/uno",
         href: "https://ianhobbsmedia.com.au/uno",
@@ -315,7 +298,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Photography"],
       description:
         "Photography of the North West Rail link Metro project",
-      logo: Minimal,
       link: {
         label: "ianhobbsmedia.com.au/northwest",
         href: "https://ianhobbsmedia.com.au/northwest-metro-architectural-photography",
@@ -326,7 +308,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Video", "Website"],
       description:
         "Animation for Wynscreen Video project with Robyn Backen. After Effects motion graphics",
-      logo: BarepapersLogo,
       link: {
         label: "ianhobbsmedia.com.au/thought-train",
         href: "https://ianhobbsmedia.com.au/thought-train",
@@ -336,7 +317,6 @@ export const RESUME_DATA: ResumeData = {
       title: "Art Photography",
       techStack: ["Art Reproduction, Hasselblad, Colour management"],
       description: "Fine Art documentation projects. Documentation and production using Hasselblad X1d camera.",
-      logo: YearProgressLogo,
       link: {
         label: "ianhobbsmedia.com.au/art",
         href: "https://ianhobbsmedia.com.au/art",
@@ -349,7 +329,6 @@ export const RESUME_DATA: ResumeData = {
       ],
       description:
         "Photographer for Dijana Alic's research research UNSW",
-      logo: ParabolLogo,
       link: {
         label: "ianhobbsmedia.com.au",
         href: "https://ianhobbsmedia.com.au/architecture",
@@ -365,7 +344,6 @@ export const RESUME_DATA: ResumeData = {
       ],
       description:
         "An e-commerce site for Australian Ceramics Organisation",
-      logo: ParabolLogo,
       link: {
         label: "australianceramics.com",
         href: "https://australianceramics.com",
@@ -382,7 +360,6 @@ export const RESUME_DATA: ResumeData = {
       ],
       description:
         "An e-commerce site and shopify store for Rosie Boylan Headwear",
-      logo: EvercastLogo,
       link: {
         label: "rosieboylan.com",
         href: "https://rosieboylan.com",
@@ -393,7 +370,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["KirbyCMS", "Front End Dev", "AlpineJS"],
       description:
         "Portfolio site for Sue Pedley",
-      logo: MobileVikingsLogo,
       link: {
         label: "suepedley.com.au",
         href: "https://suepedley.com.au/",
@@ -404,7 +380,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Web development", "Photography", "Video","PerchCMS"],
       description:
         "Portfolio web development for some lovely artists. Lots of Video and photo.",
-      logo: Howdy,
       link: {
         label: "turpincrawfordstudio.com.au/",
         href: "https://turpincrawfordstudio.com.au/",
@@ -415,7 +390,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Web Development", "Static HTML","Pug","Sass"],
       description:
         "A nice high end fashion brand site by Lucy Walker",
-      logo: TastyCloudLogo,
       link: {
         label: "ianhobbsmedia.com.au/skin8",
         href: "https://ianhobbsmedia.com.au/skin8",
@@ -426,7 +400,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["After Effects"],
       description:
         "Exibiton animation of word clouds",
-      logo: AmbitLogo,
       link: {
         label: "ianhobbsmedia.com.au/a-thousand-words",
         href: "https://ianhobbsmedia.com.au/a-thousand-words",
@@ -440,7 +413,6 @@ export const RESUME_DATA: ResumeData = {
       ],
       description:
         "Makes every picture black",
-      logo: EvercastLogo,
       link: {
         label: "github.com/ianhobbs/nano_black",
         href: "https://github.com/ianhobbs/nano_black",
@@ -451,8 +423,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Web Development","PerchCMS"],
       description:
         "A Swedish art org's home site wonderful research.",
-      logo: BimLogo,
-      
       link: {
         label: "rejmyreartlab.org/",
         href: "https://www.rejmyreartlab.org/",
@@ -462,9 +432,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Architectural Photography",
       techStack: ["Photography"],
       description:
-        "Architectural work",
-      logo: BimLogo,
-      
+        "Architectural work",   
       link: {
         label: "ianhobbsmedia.com.au/architecture",
         href: "https://ianhobbsmedia.com.au/architecture",
@@ -476,7 +444,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ["Video"],
       description:
         "Video Work",
-      logo: BimLogo,
       
       link: {
         label: "ianhobbsmedia.com.au/video-animation",
