@@ -47,6 +47,15 @@ export interface ResumeData {
       href: string;
     };
   }>;
+    published: Array<{
+    title: string;
+    pub: string;
+    year: string;
+  }>;
+    awards: Array<{
+      award: string;
+      year: string;
+  }>;
 }
 
 // GraphQL compatible types (without React components)
