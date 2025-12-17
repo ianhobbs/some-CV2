@@ -9,6 +9,8 @@ import { Education } from "./components/Education";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
+import { Awards } from "./components/Awards";
+import { Published } from "./components/Published";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
 
@@ -117,6 +119,16 @@ export default function ResumePage() {
             <SectionErrorBoundary sectionName="Projects">
               <Suspense fallback={<SectionSkeleton lines={5} />}>
                 <Projects projects={RESUME_DATA.projects} />
+              </Suspense>
+            </SectionErrorBoundary>
+            <SectionErrorBoundary sectionName="Published">
+              <Suspense fallback={<SectionSkeleton lines={3} />}>
+                <Published published={RESUME_DATA.published} />
+              </Suspense>
+            </SectionErrorBoundary>
+            <SectionErrorBoundary sectionName="Awards">
+              <Suspense fallback={<SectionSkeleton lines={1} />}>
+                <Awards awards={RESUME_DATA.awards} />
               </Suspense>
             </SectionErrorBoundary>
           </div>
