@@ -8,7 +8,8 @@ export const RESUME_DATA: ResumeData = {
   about:
     "Photographer | Coder | Creative Technologist",
   summary:
-    <>Ian Hobbs ia a specialist photographer & coder. He creates engaging media experiences for arts and business communities. Comfortable and highly accopmlished as a photographer who also enjoys publishing and media strategy. Hobbies include sailing and music composition.</>,
+    <>Ian Hobbs ia a specialist photographer, coder and creative technologist. He creates engaging media experiences for arts and business communities. Comfortable and highly accopmlished as a photographer who also enjoys publishing and media strategy. Work experience include lecturing and producing media content. A variety of domain independent ventures have been set up to deliver services and creative outomes. 
+    Hobbies include sailing and music composition.</>,
   avatarUrl: "https://avatars.githubusercontent.com/ianhobbs",
   personalWebsiteUrl: "https://ianhobbsmedia.com.au",
   contact: {
@@ -246,6 +247,21 @@ export const RESUME_DATA: ResumeData = {
     "KirbyCMS",
   ],
   projects: [
+        {
+      title: "Arttrail Website",
+      techStack: [
+        "KirbyCMS",
+        "Tailwind",
+        "AlpineJS",
+        "Design",
+        "Full Stack Developer",
+      ],
+      description: "Created a monthly festival event website for Arttrail in Bundeena. The site features a custom calendar and event management system, as well as a dynamic gallery showcasing artists and venues.",
+      link: {
+        label: "arttrail.com.au",
+        href: "https://www.arttrail.com.au/",
+      },
+    },
     {
       title: "Clear Control Website",
       techStack: [
