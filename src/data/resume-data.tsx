@@ -232,6 +232,9 @@ export const RESUME_DATA: ResumeData = {
   skills: [
     "Photography",
     "Studio Photography",
+    "Product Photography",
+    "Video Production",
+    "Audio Production",
     "Project Management",
     "Web Production",
     "Animation",
