@@ -1,14 +1,13 @@
-import React from "react";
-import { Badge } from "../../components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../../components/ui/card";
-import { Section } from "../../components/ui/section";
-import type { RESUME_DATA } from "../../data/resume-data";
+} from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import type { RESUME_DATA } from "@/data/resume-data";
 
 type ProjectTags = readonly string[];
 
@@ -20,10 +19,7 @@ interface ProjectLinkProps {
 /**
  * Renders project title with optional link and status indicator
  */
-function ProjectLink({
-  title,
-  link,
-}: ProjectLinkProps) {
+function ProjectLink({ title, link }: ProjectLinkProps) {
   if (!link) {
     return <span>{title}</span>;
   }
@@ -61,9 +57,7 @@ interface ProjectTagsProps {
 /**
  * Renders a list of technology tags used in the project
  */
-function ProjectTags({
-  tags,
-}: ProjectTagsProps) {
+function ProjectTags({ tags }: ProjectTagsProps) {
   if (tags.length === 0) return null;
 
   return (
@@ -95,12 +89,7 @@ interface ProjectCardProps {
 /**
  * Card component displaying project information
  */
-function ProjectCard({
-  title,
-  description,
-  tags,
-  link,
-}: ProjectCardProps) {
+function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
   return (
     <Card className="flex h-full flex-col overflow-hidden border p-3">
       <CardHeader>
@@ -130,9 +119,7 @@ interface ProjectsProps {
 /**
  * Section component displaying all side projects
  */
-export function Projects({
-  projects,
-}: ProjectsProps) {
+export function Projects({ projects }: ProjectsProps) {
   return (
     <Section className="scroll-mb-16 print:space-y-4">
       <h2 className="text-2xl font-bold" id="side-projects">
@@ -146,7 +133,7 @@ export function Projects({
         {projects.map((project) => (
           <article
             key={project.title}
-            className="h-full" // Added h-full here
+            className="h-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm print:hover:translate-y-0 print:hover:shadow-none"
           >
             <ProjectCard
               title={project.title}

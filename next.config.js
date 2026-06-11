@@ -1,20 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
+
   // Enable React strict mode for better development experience
   reactStrictMode: true,
 
   // Optimize images
   images: {
-    domains: ['avatars.githubusercontent.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60,
   },
 
   // Compress output
   compress: true,
-
-  // Enable SWC minification
-  swcMinify: true,
 
   // Headers for security and performance
   async headers() {

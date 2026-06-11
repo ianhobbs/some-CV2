@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { CommandMenu } from "@/components/command-menu";
-import { SectionErrorBoundary } from "@/components/section-error-boundary";
-import { SectionSkeleton } from "@/components/section-skeleton";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
+<<<<<<< HEAD
 import { Education } from "./components/Education";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
@@ -13,6 +11,14 @@ import { Awards } from "./components/Awards";
 import { Published } from "./components/Published";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
+=======
+import { Education } from "./components/education";
+import { Header } from "./components/header";
+import { Projects } from "./components/projects";
+import { Skills } from "./components/skills";
+import { Summary } from "./components/summary";
+import { WorkExperience } from "./components/work-experience";
+>>>>>>> origin/main
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -82,16 +88,15 @@ export default function ResumePage() {
         </div>
 
         <section
-          className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
+          className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4 dark:bg-background"
           aria-label="Resume Content"
         >
-          <SectionErrorBoundary sectionName="Header">
-            <Suspense fallback={<SectionSkeleton lines={4} />}>
-              <Header />
-            </Suspense>
-          </SectionErrorBoundary>
+          <div className="animate-fade-in" style={{ animationDelay: "0ms" }}>
+            <Header />
+          </div>
 
           <div className="space-y-8 print:space-y-4">
+<<<<<<< HEAD
             <SectionErrorBoundary sectionName="Summary">
               <Suspense fallback={<SectionSkeleton lines={2} />}>
                 <Summary summary={RESUME_DATA.summary} />
@@ -131,6 +136,35 @@ export default function ResumePage() {
                 <Awards awards={RESUME_DATA.awards} />
               </Suspense>
             </SectionErrorBoundary>
+=======
+            <div className="animate-fade-in" style={{ animationDelay: "75ms" }}>
+              <Summary summary={RESUME_DATA.summary} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "150ms" }}
+            >
+              <WorkExperience work={RESUME_DATA.work} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "225ms" }}
+            >
+              <Education education={RESUME_DATA.education} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "300ms" }}
+            >
+              <Skills skills={RESUME_DATA.skills} />
+            </div>
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "375ms" }}
+            >
+              <Projects projects={RESUME_DATA.projects} />
+            </div>
+>>>>>>> origin/main
           </div>
         </section>
 

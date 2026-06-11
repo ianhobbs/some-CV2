@@ -1,4 +1,3 @@
-import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
@@ -45,7 +44,7 @@ export function Skills({ skills, className }: SkillsProps) {
       <h2 className="text-2xl font-bold" id="skills-section">
         Skills
       </h2>
-      <SkillsList skills={skills} aria-labelledby="skills-section" />
+      <SkillsList skills={skills} />
     </Section>
   );
 }
