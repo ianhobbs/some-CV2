@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
 
@@ -64,11 +63,7 @@ export function Awards({ awards }: AwardsListProps) {
       <h2 className="text-2xl font-bold" id="awards-section">
         Awards
       </h2>
-      <div
-        className="space-y-4"
-        role="feed"
-        aria-labelledby="awards-section"
-      >
+      <div className="space-y-4" role="feed" aria-labelledby="awards-section">
         {awards.map((item) => (
           <article key={item.award}>
             <AwardsItem awards={item} />

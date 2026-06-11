@@ -1,5 +1,3 @@
-import React from "react";
-import { Badge } from "../../components/ui/badge";
 import {
   Card,
   CardContent,
@@ -11,29 +9,23 @@ import type { RESUME_DATA } from "../../data/resume-data";
 
 type Published = (typeof RESUME_DATA)["published"];
 
-
 type PublishedItemType = Published[number];
 
 interface PublishedItemProps {
   published: PublishedItemType;
 }
 
-
-function PublishedItem({published}: PublishedItemProps) {
-  const { title, pub, year } = published; 
+function PublishedItem({ published }: PublishedItemProps) {
+  const { title } = published;
 
   return (
     <Card className="flex h-full flex-col overflow-hidden border p-3">
       <CardHeader>
         <div className="space-y-1">
-          <CardTitle className="text-base">
-            {title} 
-          </CardTitle>
+          <CardTitle className="text-base">{title}</CardTitle>
         </div>
       </CardHeader>
-      <CardContent className="mt-auto flex">
-
-      </CardContent>
+      <CardContent className="mt-auto flex" />
     </Card>
   );
 }
@@ -45,21 +37,20 @@ interface PublishedProps {
 /**
  * Section component displaying all side published
  */
-export function Published({
-  published,
-}: PublishedProps) {
+export function Published({ published }: PublishedProps) {
   return (
     <Section className="scroll-mb-16 print:space-y-4">
       <h2 className="text-2xl font-bold" id="side-published">
         Published
       </h2>
-      <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
-        role="feed" aria-labelledby="side-published">
+      <div
+        className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
+        role="feed"
+        aria-labelledby="side-published"
+      >
         {published.map((item) => (
-          <article key={item.title}
-            className="h-full">
-            < PublishedItem published={item}  
-            />
+          <article key={item.title} className="h-full">
+            <PublishedItem published={item} />
           </article>
         ))}
       </div>

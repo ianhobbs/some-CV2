@@ -1,24 +1,18 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { CommandMenu } from "@/components/command-menu";
+import { ErrorBoundary } from "@/components/error-boundary";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
-<<<<<<< HEAD
+
+import { Awards } from "./components/Awards";
 import { Education } from "./components/Education";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
-import { Skills } from "./components/Skills";
-import { Awards } from "./components/Awards";
 import { Published } from "./components/Published";
+import { Skills } from "./components/Skills";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
-=======
-import { Education } from "./components/education";
-import { Header } from "./components/header";
-import { Projects } from "./components/projects";
-import { Skills } from "./components/skills";
-import { Summary } from "./components/summary";
-import { WorkExperience } from "./components/work-experience";
->>>>>>> origin/main
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -96,75 +90,45 @@ export default function ResumePage() {
           </div>
 
           <div className="space-y-8 print:space-y-4">
-<<<<<<< HEAD
-            <SectionErrorBoundary sectionName="Summary">
-              <Suspense fallback={<SectionSkeleton lines={2} />}>
+            <ErrorBoundary>
+              <Suspense>
                 <Summary summary={RESUME_DATA.summary} />
               </Suspense>
-            </SectionErrorBoundary>
+            </ErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Work Experience">
-              <Suspense fallback={<SectionSkeleton lines={6} />}>
+            <ErrorBoundary>
+              <Suspense>
                 <WorkExperience work={RESUME_DATA.work} />
               </Suspense>
-            </SectionErrorBoundary>
+            </ErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Education">
-              <Suspense fallback={<SectionSkeleton lines={3} />}>
+            <ErrorBoundary>
+              <Suspense>
                 <Education education={RESUME_DATA.education} />
               </Suspense>
-            </SectionErrorBoundary>
+            </ErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Skills">
-              <Suspense fallback={<SectionSkeleton lines={2} />}>
+            <ErrorBoundary>
+              <Suspense>
                 <Skills skills={RESUME_DATA.skills} />
               </Suspense>
-            </SectionErrorBoundary>
+            </ErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Projects">
-              <Suspense fallback={<SectionSkeleton lines={5} />}>
+            <ErrorBoundary>
+              <Suspense>
                 <Projects projects={RESUME_DATA.projects} />
               </Suspense>
-            </SectionErrorBoundary>
-            <SectionErrorBoundary sectionName="Published">
-              <Suspense fallback={<SectionSkeleton lines={3} />}>
+            </ErrorBoundary>
+            <ErrorBoundary>
+              <Suspense>
                 <Published published={RESUME_DATA.published} />
               </Suspense>
-            </SectionErrorBoundary>
-            <SectionErrorBoundary sectionName="Awards">
-              <Suspense fallback={<SectionSkeleton lines={1} />}>
+            </ErrorBoundary>
+            <ErrorBoundary>
+              <Suspense>
                 <Awards awards={RESUME_DATA.awards} />
               </Suspense>
-            </SectionErrorBoundary>
-=======
-            <div className="animate-fade-in" style={{ animationDelay: "75ms" }}>
-              <Summary summary={RESUME_DATA.summary} />
-            </div>
-            <div
-              className="animate-fade-in"
-              style={{ animationDelay: "150ms" }}
-            >
-              <WorkExperience work={RESUME_DATA.work} />
-            </div>
-            <div
-              className="animate-fade-in"
-              style={{ animationDelay: "225ms" }}
-            >
-              <Education education={RESUME_DATA.education} />
-            </div>
-            <div
-              className="animate-fade-in"
-              style={{ animationDelay: "300ms" }}
-            >
-              <Skills skills={RESUME_DATA.skills} />
-            </div>
-            <div
-              className="animate-fade-in"
-              style={{ animationDelay: "375ms" }}
-            >
-              <Projects projects={RESUME_DATA.projects} />
-            </div>
->>>>>>> origin/main
+            </ErrorBoundary>
           </div>
         </section>
 

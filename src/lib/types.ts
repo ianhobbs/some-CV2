@@ -50,13 +50,13 @@ export interface ResumeData {
       href: string;
     };
   }>;
-    published: Array<{
+  published: Array<{
     title: string;
     pub: string;
     year: string;
   }>;
-    awards: Array<{
-      award: string;
-      year: string;
+  awards: Array<{
+    award: string;
+    year: string;
   }>;
 }

@@ -5,11 +5,18 @@ export const RESUME_DATA: ResumeData = {
   initials: "IJ",
   location: "Sydney, Australia, EST",
   locationLink: "https://www.google.com/maps/place/Sydney",
-  about:
-    "Photographer | Coder | Creative Technologist",
-  summary:
-    <>Ian Hobbs ia a specialist photographer, coder and creative technologist. He creates engaging media experiences for arts and business communities. Comfortable and highly accopmlished as a photographer who also enjoys publishing and media strategy. Work experience include lecturing and producing media content. A variety of domain independent ventures have been set up to deliver services and creative outomes. 
-    Hobbies include sailing and music composition.</>,
+  about: "Photographer | Coder | Creative Technologist",
+  summary: (
+    <>
+      Ian Hobbs ia a specialist photographer, coder and creative technologist.
+      He creates engaging media experiences for arts and business communities.
+      Comfortable and highly accopmlished as a photographer who also enjoys
+      publishing and media strategy. Work experience include lecturing and
+      producing media content. A variety of domain independent ventures have
+      been set up to deliver services and creative outomes. Hobbies include
+      sailing and music composition.
+    </>
+  ),
   avatarUrl: "https://avatars.githubusercontent.com/ianhobbs",
   personalWebsiteUrl: "https://ianhobbsmedia.com.au",
   contact: {
@@ -19,7 +26,7 @@ export const RESUME_DATA: ResumeData = {
       {
         name: "GitHub",
         url: "https://github.com/ianhobbs",
-        icon: "github"
+        icon: "github",
       },
       {
         name: "LinkedIn",
@@ -27,7 +34,7 @@ export const RESUME_DATA: ResumeData = {
         icon: "linkedin",
       },
       {
-        name: "Instagram", 
+        name: "Instagram",
         url: "https://www.instagram.com/ianhobbs_media/",
         icon: "globe",
       },
@@ -55,8 +62,14 @@ export const RESUME_DATA: ResumeData = {
       title: "Media",
       start: "2000",
       end: "now",
-      description:
-        <>Experience includes; Videographer, Editor, Photographer, Front-end development, Animator, Design, Web production, Server and Data Management. Client and Project Management. Art Direction, Concept development. Media strategy and Editorial strategy.</>,
+      description: (
+        <>
+          Experience includes; Videographer, Editor, Photographer, Front-end
+          development, Animator, Design, Web production, Server and Data
+          Management. Client and Project Management. Art Direction, Concept
+          development. Media strategy and Editorial strategy.
+        </>
+      ),
     },
     {
       company: "University of Sydney. Sydney College of the Arts",
@@ -65,8 +78,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Tutor - Film Media",
       start: "02/2026",
       end: "06/2026",
-      description:
-        <>Tutoring in Film Sound design</>,
+      description: <>Tutoring in Film Sound design</>,
     },
     {
       company: "Museum and Art Gallery of Nothern Territory",
@@ -75,8 +87,15 @@ export const RESUME_DATA: ResumeData = {
       title: "Digitisation Officer",
       start: "04/2024",
       end: "10/2024",
-      description:
-        <>Digitising Collections and managing data assets. Docuementation of collection works with Fuji GFX100 and PhaseOne cameras. Digitising to FADGI-4 standards using a varueity of ICC managamant profiles. File archive and managment with Neofinder and Bash scripting. Capture-One-Pro Photoshop and other image management applications.</>,
+      description: (
+        <>
+          Digitising Collections and managing data assets. Docuementation of
+          collection works with Fuji GFX100 and PhaseOne cameras. Digitising to
+          FADGI-4 standards using a varueity of ICC managamant profiles. File
+          archive and managment with Neofinder and Bash scripting.
+          Capture-One-Pro Photoshop and other image management applications.
+        </>
+      ),
     },
     {
       company: "Codey",
@@ -105,7 +124,8 @@ export const RESUME_DATA: ResumeData = {
       title: "Lecturer",
       start: "2010",
       end: "2014",
-      description: "Design and deliver subjects in Photography and Electronic & New Media.",
+      description:
+        "Design and deliver subjects in Photography and Electronic & New Media.",
     },
     {
       company: "Insearch UTS",
@@ -150,7 +170,8 @@ export const RESUME_DATA: ResumeData = {
       title: "Teacher",
       start: "2001",
       end: "2006",
-      description: "Design and deliver courses in New media, Flash, Web Photo-media, Design. Animation",
+      description:
+        "Design and deliver courses in New media, Flash, Web Photo-media, Design. Animation",
     },
     {
       company: "Doubleday Australia Pty.Ltd",
@@ -159,7 +180,8 @@ export const RESUME_DATA: ResumeData = {
       title: "Photographer",
       start: "1996",
       end: "1997",
-      description: "Producing studio product photography for direct marketing. Maintaining accounts and equipment",
+      description:
+        "Producing studio product photography for direct marketing. Maintaining accounts and equipment",
     },
     {
       company: "Computer Images, Crows Nest NSW",
@@ -168,7 +190,8 @@ export const RESUME_DATA: ResumeData = {
       title: "Camera Operator",
       start: "1990",
       end: "1992",
-      description: "Operate and manage small photographic studio servicing internal graphic needs; maintain budget; operate a Rostrum camera to create film dupes and matts; location, corporate, architectural, product and interior photography.",
+      description:
+        "Operate and manage small photographic studio servicing internal graphic needs; maintain budget; operate a Rostrum camera to create film dupes and matts; location, corporate, architectural, product and interior photography.",
     },
     {
       company: " David Graphics Pty. Ltd Sydney",
@@ -177,35 +200,37 @@ export const RESUME_DATA: ResumeData = {
       title: "Photographer",
       start: "1989",
       end: "1992",
-      description: "Operate and manage small photographic studio servicing internal graphic needs; maintain budget; product photography for retail catalogues.",
+      description:
+        "Operate and manage small photographic studio servicing internal graphic needs; maintain budget; product photography for retail catalogues.",
     },
-    
   ],
-
 
   awards: [
     {
-      award: "Recipient of Premiers Department Grant with Penrith Regional Gallery",
+      award:
+        "Recipient of Premiers Department Grant with Penrith Regional Gallery",
       year: "2003",
     },
     {
-      award: "Recipient of New Media Grant for Interactive Works, Australia Council.",
+      award:
+        "Recipient of New Media Grant for Interactive Works, Australia Council.",
       year: "1999",
     },
     {
-      award: "The Art Directors Club, New York, NY 75th Awards, 'Merit Award for Editorial Publications' for Object Magazine, Craft Council of NSW.",
+      award:
+        "The Art Directors Club, New York, NY 75th Awards, 'Merit Award for Editorial Publications' for Object Magazine, Craft Council of NSW.",
       year: "1996",
     },
     {
-      award: "National Gallery of Australia Collection. 'Sea Shell Headset' Joyce Hinterding & Ian Hobbs",
+      award:
+        "National Gallery of Australia Collection. 'Sea Shell Headset' Joyce Hinterding & Ian Hobbs",
       year: "1988",
     },
     {
-      award: "National Gallery of Australia Collection. Poster, 'May 1st Club - Smash Capital'.",
+      award:
+        "National Gallery of Australia Collection. Poster, 'May 1st Club - Smash Capital'.",
       year: "1983",
     },
-
-
   ],
 
   published: [
@@ -236,9 +261,8 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
 
-
   // end insert
-  
+
   skills: [
     "Photography",
     "Studio Photography",
@@ -260,7 +284,7 @@ export const RESUME_DATA: ResumeData = {
     "KirbyCMS",
   ],
   projects: [
-        {
+    {
       title: "Arttrail Website",
       techStack: [
         "KirbyCMS",
@@ -269,7 +293,8 @@ export const RESUME_DATA: ResumeData = {
         "Design",
         "Full Stack Developer",
       ],
-      description: "Created a monthly festival event website for Arttrail in Bundeena. The site features a custom calendar and event management system, as well as a dynamic gallery showcasing artists and venues.",
+      description:
+        "Created a monthly festival event website for Arttrail in Bundeena. The site features a custom calendar and event management system, as well as a dynamic gallery showcasing artists and venues.",
       link: {
         label: "arttrail.com.au",
         href: "https://www.arttrail.com.au/",
@@ -286,7 +311,8 @@ export const RESUME_DATA: ResumeData = {
         "Content",
         "Full Stack Developer",
       ],
-      description: "Created a business website with seductive animations and strong case study representations",
+      description:
+        "Created a business website with seductive animations and strong case study representations",
       link: {
         label: "clearcontrol.com.au",
         href: "https://www.clearcontrol.com.au/",
@@ -294,9 +320,8 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Cementa Website",
-      techStack: ["PerchCMS", "Web Production","Content","Photography"],
-      description:
-        "A festival site showcasing artists and Festival events",
+      techStack: ["PerchCMS", "Web Production", "Content", "Photography"],
+      description: "A festival site showcasing artists and Festival events",
       link: {
         label: "cementa.com.au",
         href: "https://cementa.com.au/",
@@ -304,7 +329,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "A Thousand Words Website",
-      techStack: ["Web Production","Animation"],
+      techStack: ["Web Production", "Animation"],
       description:
         "A website of the Museum of Sydney 'A Thousand Words' exhibition",
       link: {
@@ -314,7 +339,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Uno",
-      techStack: ["After Effects","Video"],
+      techStack: ["After Effects", "Video"],
       description:
         "Develop animations for custom Architectural LED screens for Robyn Backen",
       link: {
@@ -325,8 +350,7 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "Northwest Metro Rail-link",
       techStack: ["Photography"],
-      description:
-        "Photography of the North West Rail link Metro project",
+      description: "Photography of the North West Rail link Metro project",
       link: {
         label: "ianhobbsmedia.com.au/northwest",
         href: "https://ianhobbsmedia.com.au/northwest-metro-architectural-photography",
@@ -345,7 +369,8 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "Art Photography",
       techStack: ["Art Reproduction, Hasselblad, Colour management"],
-      description: "Fine Art documentation projects. Documentation and production using Hasselblad X1d camera.",
+      description:
+        "Fine Art documentation projects. Documentation and production using Hasselblad X1d camera.",
       link: {
         label: "ianhobbsmedia.com.au/art",
         href: "https://ianhobbsmedia.com.au/art",
@@ -353,11 +378,8 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Research on Cultural and Religious Diversity",
-      techStack: [
-        "Photographer",
-      ],
-      description:
-        "Photographer for Dijana Alic's research research UNSW",
+      techStack: ["Photographer"],
+      description: "Photographer for Dijana Alic's research research UNSW",
       link: {
         label: "ianhobbsmedia.com.au",
         href: "https://ianhobbsmedia.com.au/architecture",
@@ -365,14 +387,8 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Australian Ceramics Website",
-      techStack: [
-        "Full Stack Developer",
-        "PerchCMS",
-        "AlpineJS",
-        "HTMLX",
-      ],
-      description:
-        "An e-commerce site for Australian Ceramics Organisation",
+      techStack: ["Full Stack Developer", "PerchCMS", "AlpineJS", "HTMLX"],
+      description: "An e-commerce site for Australian Ceramics Organisation",
       link: {
         label: "australianceramics.com",
         href: "https://australianceramics.com",
@@ -385,7 +401,7 @@ export const RESUME_DATA: ResumeData = {
         "Wordpress",
         "Shopify",
         "liquid",
-        "Product Manager"
+        "Product Manager",
       ],
       description:
         "An e-commerce site and shopify store for Rosie Boylan Headwear",
@@ -397,8 +413,7 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "Sue Pedley Site",
       techStack: ["KirbyCMS", "Front End Dev", "AlpineJS"],
-      description:
-        "Portfolio site for Sue Pedley",
+      description: "Portfolio site for Sue Pedley",
       link: {
         label: "suepedley.com.au",
         href: "https://suepedley.com.au/",
@@ -406,7 +421,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Turpin Crawford Studios Site",
-      techStack: ["Web development", "Photography", "Video","PerchCMS"],
+      techStack: ["Web development", "Photography", "Video", "PerchCMS"],
       description:
         "Portfolio web development for some lovely artists. Lots of Video and photo.",
       link: {
@@ -416,9 +431,8 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Skin 8",
-      techStack: ["Web Development", "Static HTML","Pug","Sass"],
-      description:
-        "A nice high end fashion brand site by Lucy Walker",
+      techStack: ["Web Development", "Static HTML", "Pug", "Sass"],
+      description: "A nice high end fashion brand site by Lucy Walker",
       link: {
         label: "ianhobbsmedia.com.au/skin8",
         href: "https://ianhobbsmedia.com.au/skin8",
@@ -427,8 +441,7 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "A Thousand Words Video",
       techStack: ["After Effects"],
-      description:
-        "Exibiton animation of word clouds",
+      description: "Exibiton animation of word clouds",
       link: {
         label: "ianhobbsmedia.com.au/a-thousand-words",
         href: "https://ianhobbsmedia.com.au/a-thousand-words",
@@ -436,12 +449,8 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Nano-black",
-      techStack: [
-        "Browser Plugin",
-        "HTML hack",
-      ],
-      description:
-        "Makes every picture black",
+      techStack: ["Browser Plugin", "HTML hack"],
+      description: "Makes every picture black",
       link: {
         label: "github.com/ianhobbs/nano_black",
         href: "https://github.com/ianhobbs/nano_black",
@@ -449,9 +458,8 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Rejmyre Art Lab Site",
-      techStack: ["Web Development","PerchCMS"],
-      description:
-        "A Swedish art org's home site wonderful research.",
+      techStack: ["Web Development", "PerchCMS"],
+      description: "A Swedish art org's home site wonderful research.",
       link: {
         label: "rejmyreartlab.org/",
         href: "https://www.rejmyreartlab.org/",
@@ -460,8 +468,7 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "Architectural Photography",
       techStack: ["Photography"],
-      description:
-        "Architectural work",   
+      description: "Architectural work",
       link: {
         label: "ianhobbsmedia.com.au/architecture",
         href: "https://ianhobbsmedia.com.au/architecture",
@@ -471,9 +478,8 @@ export const RESUME_DATA: ResumeData = {
     {
       title: "Video Animation",
       techStack: ["Video"],
-      description:
-        "Video Work",
-      
+      description: "Video Work",
+
       link: {
         label: "ianhobbsmedia.com.au/video-animation",
         href: "https://ianhobbsmedia.com.au/video-animation",
