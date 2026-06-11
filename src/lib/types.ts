@@ -38,7 +38,7 @@ export interface ResumeData {
     title: string;
     start: string;
     end: string | null;
-    description: string;
+    description: ReactNode;
     highlights?: readonly string[];
   }>;
   skills: string[];
