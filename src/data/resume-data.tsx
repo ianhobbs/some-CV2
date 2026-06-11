@@ -59,6 +59,16 @@ export const RESUME_DATA: ResumeData = {
         <>Experience includes; Videographer, Editor, Photographer, Front-end development, Animator, Design, Web production, Server and Data Management. Client and Project Management. Art Direction, Concept development. Media strategy and Editorial strategy.</>,
     },
     {
+      company: "University of Sydney. Sydney College of the Arts",
+      link: "https://sydney.edu.au",
+      badges: ["Sessional"],
+      title: "Tutor - Film Media",
+      start: "02/2026",
+      end: "06/2026",
+      description:
+        <>Tutoring in Film Sound design</>,
+    },
+    {
       company: "Museum and Art Gallery of Nothern Territory",
       link: "https://magnt.net.au",
       badges: ["Fulltime"],
