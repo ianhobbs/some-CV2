@@ -14,7 +14,7 @@
     "check:fix": "biome check --write ./src"
   },
   "dependencies": {
-    "@apollo/server": "^4.10.2",
+    "@apollo/server": "^5.4.0",
     "@as-integrations/next": "^3.0.0",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-dialog": "^1.1.15",
