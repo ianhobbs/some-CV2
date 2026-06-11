@@ -19,7 +19,6 @@
 # misc
 .DS_Store
 *.pem
-src/data/resume-data-stored.tsx
 
 # debug
 npm-debug.log*
