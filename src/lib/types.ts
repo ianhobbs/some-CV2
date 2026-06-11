@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import type { ReactNode } from "react";
 
 export type ResumeIcon =
   | React.ComponentType<React.SVGProps<SVGSVGElement>>
@@ -12,7 +13,7 @@ export interface ResumeData {
   location: string;
   locationLink: string;
   about: string;
-  summary: string;
+  summary: ReactNode;
   avatarUrl: string;
   personalWebsiteUrl: string;
   contact: {

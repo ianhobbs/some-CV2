@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import { Section } from "../../components/ui/section";
 
 interface AboutProps {
-  summary: string;
+  summary: ReactNode;
   className?: string;
 }
 

@@ -6,13 +6,13 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
 
 import { Awards } from "./components/Awards";
-import { Education } from "./components/Education";
-import { Header } from "./components/Header";
-import { Projects } from "./components/Projects";
+import { Education } from "./components/education";
+import { Header } from "./components/header";
 import { Published } from "./components/Published";
-import { Skills } from "./components/Skills";
-import { Summary } from "./components/Summary";
-import { WorkExperience } from "./components/WorkExperience";
+import { Projects } from "./components/projects";
+import { Skills } from "./components/skills";
+import { Summary } from "./components/summary";
+import { WorkExperience } from "./components/work-experience";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
