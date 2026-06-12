@@ -16,6 +16,7 @@ export interface ResumeData {
   summary: ReactNode;
   avatarUrl: string;
   personalWebsiteUrl: string;
+  siteUrl: string;
   contact: {
     email: string;
     tel: string;

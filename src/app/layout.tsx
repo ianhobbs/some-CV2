@@ -16,15 +16,19 @@ export const metadata: Metadata = {
   },
   description: RESUME_DATA.about,
   keywords: [
+    RESUME_DATA.name,
+    "photographer",
+    "Sydney photographer",
+    "studio photography",
+    "product photography",
+    "architectural photography",
+    "video production",
+    "creative technologist",
+    "coder",
+    "full stack developer",
     "resume",
     "cv",
     "portfolio",
-    RESUME_DATA.name,
-    "photographer",
-    "full stack developer",
-    "creative technologist",
-    "next.js",
-    "typescript",
   ],
   authors: [{ name: RESUME_DATA.name }],
   creator: RESUME_DATA.name,
@@ -37,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: RESUME_DATA.personalWebsiteUrl,
+    url: RESUME_DATA.siteUrl,
     siteName: `${RESUME_DATA.name}'s CV`,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
@@ -60,7 +64,7 @@ export const metadata: Metadata = {
     creator: "@ianhobbsmedia",
   },
   alternates: {
-    canonical: RESUME_DATA.personalWebsiteUrl,
+    canonical: RESUME_DATA.siteUrl,
   },
 };
 

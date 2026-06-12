@@ -20,7 +20,7 @@ export function generatePersonStructuredData() {
       telephone: RESUME_DATA.contact.tel,
       contactType: "personal",
     },
-    jobTitle: "Full Stack Engineer",
+    jobTitle: "Photographer & Creative Technologist",
     worksFor:
       RESUME_DATA.work.length > 0
         ? {
@@ -40,11 +40,6 @@ export function generatePersonStructuredData() {
         "@type": "Place",
         name: RESUME_DATA.location,
       },
-      occupationalCategory: "Software Engineering",
-      estimatedSalary: {
-        "@type": "MonetaryAmountDistribution",
-        name: "Professional software engineer",
-      },
     })),
     knowsAbout: RESUME_DATA.skills,
   };
@@ -56,12 +51,12 @@ export function generateWebPageStructuredData() {
     "@type": "WebPage",
     name: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    url: "https://cv.jarocki.me",
+    url: RESUME_DATA.siteUrl,
     inLanguage: "en-US",
     isPartOf: {
       "@type": "WebSite",
       name: `${RESUME_DATA.name}'s Professional Resume`,
-      url: "https://cv.jarocki.me",
+      url: RESUME_DATA.siteUrl,
     },
     about: {
       "@type": "Person",
@@ -83,6 +78,6 @@ export function generateResumeStructuredData() {
     about: person,
     name: `${RESUME_DATA.name} - Professional Resume`,
     description: `Professional resume and portfolio of ${RESUME_DATA.name}, ${RESUME_DATA.about}`,
-    url: "https://cv.jarocki.me",
+    url: RESUME_DATA.siteUrl,
   };
 }

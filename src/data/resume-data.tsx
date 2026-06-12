@@ -19,6 +19,7 @@ export const RESUME_DATA: ResumeData = {
   ),
   avatarUrl: "https://avatars.githubusercontent.com/ianhobbs",
   personalWebsiteUrl: "https://ianhobbsmedia.com.au",
+  siteUrl: "https://cv.ianhobbsmedia.com.au",
   contact: {
     email: "admin@ianhobbsmedia.com.au",
     tel: "+61411032601",
